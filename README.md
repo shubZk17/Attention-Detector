@@ -22,26 +22,27 @@ This project detects user distraction using webcam footage and machine learning.
    cd attention-detection
 
 2. **Set up a virtual environment:**
+   ```bash
    python -m venv venv
    venv\Scripts\activate   # On Windows
    source venv/bin/activate  # On Linux/macOS
 
-3. **Install dependencies:** 
-
+4. **Install dependencies:** 
+   ```bash
    pip install -r requirements.txt
 
-4. **Preprocess the data:**
+5. **Preprocess the data:**
    Ensure your image data is inside data/raw/imgs/train/ and labeled by folders (e.g., c0, c1, ..., c9).
 
-   code:
+   ```bash
    python src/preprocess.py
 
-5. **Train the model:**
+6. **Train the model:**
 
-   code:
+   ```bash
    python src/train.py
 
-6. **Run real-time attention detection:**
+7. **Run real-time attention detection:**
 
-   code:
+   ```bash
    python src/infer.py
